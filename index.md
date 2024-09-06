@@ -5,6 +5,19 @@ description: Home Page
 hide: true
 ---
 
+<table cellpadding="10">
+    <tr>
+        <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
+        <td><a href="{{site.baseurl}}/snake">Previous Website</a></td>
+    </tr>
+</table>
+
+<div style="align-items: center; display: flex; flex-direction: column;">
+    <a href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/images/globe.gif" height="60" title="Globe [:" alt="" style="margin-top: -140px; margin-left: 880px;">
+    </a>
+</div>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,6 +61,28 @@ hide: true
       .cool-button:hover {
         background-color: #45a049; /* Darker green on hover */
       }
+
+      /* Gradient button styling */
+      .gradient-button {
+        background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px; /* Rounded edges */
+      }
+
+      /* Bordered div boxes */
+      .bordered-box {
+        border: 2px solid orange; /* Change border to orange */
+        padding: 20px;
+        margin-top: 10px;
+      }
     </style>
 </head>
 <body>
@@ -55,10 +90,16 @@ hide: true
     <!-- Paragraph element -->
     <p>This is a paragraph.</p>
 
-    <!-- Div element -->
-    <div style="background-color: lightblue; padding: 20px; margin-top: 10px;">
-        This is a div. 
-        </div>
+    <!-- First div box with gradient button -->
+    <div class="bordered-box">
+      Click this button !
+      <button class="gradient-button">Button</button>
+    </div>
+
+    <!-- Second div box for the 'Past Projects' button with same styling -->
+    <div class="bordered-box">
+      <button class="gradient-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
+    </div>
 
 </body>
 </html>
@@ -81,8 +122,7 @@ My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
 
 I took this class because I am very passionate about the field of computer science. Also, last year, I had taken the prerequisite to this class, CSSE 1-2. CSSE 1-2 really prepared me for this class, as it allowed me to complete most of the Tool Setups on the first day. Here is a link to my previous home page where all of my past projects are:
 
-<!-- Button element -->
-<button class="cool-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
+<!-- The 'Past Projects' button has already been moved below -->
 
 ## My Future Goals
 
