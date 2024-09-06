@@ -21,6 +21,23 @@ hide: true
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    
+          
+            
+    
+
+          
+          Expand Down
+          
+            
+    
+
+          
+          Expand Up
+    
+    @@ -48,17 +61,45 @@ hide: true
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Home</title>
     <style>
@@ -28,20 +45,17 @@ hide: true
         opacity: 0;
         animation: fadeIn 2s forwards;
       }
-
       @keyframes fadeIn {
         to {
           opacity: 1;
         }
       }
-
       .reveal-later {
         opacity: 0;
         transition: opacity 1s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
       }
-
       /* Button styling */
       .cool-button {
         background-color: #4CAF50; /* Green */
@@ -57,7 +71,6 @@ hide: true
         border-radius: 12px; /* Rounded edges */
         transition: background-color 0.3s ease;
       }
-
       .cool-button:hover {
         background-color: #45a049; /* Darker green on hover */
       }
@@ -104,12 +117,19 @@ hide: true
 </body>
 </html>
 
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -81,8 +122,7 @@ My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
+  
 <br> 
-
 ## Introduction
-
 My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
-
 <ul>
   <li class="fade-in">AP Physics</li>
   <li class="fade-in" style="animation-delay: 0.5s;">AP Calculus AB</li>
@@ -117,7 +137,6 @@ My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
   <li class="fade-in" style="animation-delay: 1.5s;">AP Computer Science Principles</li>
   <li class="fade-in" style="animation-delay: 1.5s;">Spanish 6</li>
 </ul>
-
 ## Why did I take this class?
 
 I took this class because I am very passionate about the field of computer science. Also, last year, I had taken the prerequisite to this class, CSSE 1-2. CSSE 1-2 really prepared me for this class, as it allowed me to complete most of the Tool Setups on the first day. Here is a link to my previous home page where all of my past projects are:
