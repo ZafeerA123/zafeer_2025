@@ -21,23 +21,6 @@ hide: true
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    
-          
-            
-    
-
-          
-          Expand Down
-          
-            
-    
-
-          
-          Expand Up
-    
-    @@ -48,17 +61,45 @@ hide: true
-  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Home</title>
     <style>
@@ -45,20 +28,23 @@ hide: true
         opacity: 0;
         animation: fadeIn 2s forwards;
       }
+
       @keyframes fadeIn {
         to {
           opacity: 1;
         }
       }
+
       .reveal-later {
         opacity: 0;
         transition: opacity 1s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
       }
+
       /* Button styling */
       .cool-button {
-        background-color: #4CAF50; /* Green */
+        background: linear-gradient(to right, #ff7e5f, #feb47b); /* Same gradient as other button */
         border: none;
         color: white;
         padding: 15px 32px;
@@ -69,8 +55,8 @@ hide: true
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 12px; /* Rounded edges */
-        transition: background-color 0.3s ease;
       }
+
       .cool-button:hover {
         background-color: #45a049; /* Darker green on hover */
       }
@@ -90,9 +76,10 @@ hide: true
         border-radius: 12px; /* Rounded edges */
       }
 
-      /* Bordered div boxes */
-      .bordered-box {
-        border: 2px solid orange; /* Change border to orange */
+      /* Transparent div box with orange border */
+      .transparent-box {
+        background-color: transparent;
+        border: 2px solid orange;
         padding: 20px;
         margin-top: 10px;
       }
@@ -103,33 +90,27 @@ hide: true
     <!-- Paragraph element -->
     <p>This is a paragraph.</p>
 
-    <!-- First div box with gradient button -->
-    <div class="bordered-box">
-      Click this button !
-      <button class="gradient-button">Button</button>
+    <!-- First div with the gradient button -->
+    <div class="transparent-box">
+        Click this button!
+        <button class="gradient-button">Button</button>
     </div>
 
-    <!-- Second div box for the 'Past Projects' button with same styling -->
-    <div class="bordered-box">
-      <button class="gradient-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
+    <!-- Second div with the "Past Projects" button -->
+    <div class="transparent-box">
+        <!-- Button for past projects -->
+        <button class="cool-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
     </div>
 
 </body>
 </html>
 
-    
-        
-          
-    
-
-        
-        Expand All
-    
-    @@ -81,8 +122,7 @@ My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
-  
 <br> 
+
 ## Introduction
+
 My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
+
 <ul>
   <li class="fade-in">AP Physics</li>
   <li class="fade-in" style="animation-delay: 0.5s;">AP Calculus AB</li>
@@ -137,11 +118,13 @@ My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
   <li class="fade-in" style="animation-delay: 1.5s;">AP Computer Science Principles</li>
   <li class="fade-in" style="animation-delay: 1.5s;">Spanish 6</li>
 </ul>
+
 ## Why did I take this class?
 
 I took this class because I am very passionate about the field of computer science. Also, last year, I had taken the prerequisite to this class, CSSE 1-2. CSSE 1-2 really prepared me for this class, as it allowed me to complete most of the Tool Setups on the first day. Here is a link to my previous home page where all of my past projects are:
 
-<!-- The 'Past Projects' button has already been moved below -->
+<!-- Button element -->
+<button class="cool-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
 
 ## My Future Goals
 
