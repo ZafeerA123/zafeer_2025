@@ -9,7 +9,7 @@ image: /images/mario_animation.png
 <table cellpadding="10">
     <tr>
         <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
-        <td><a href="{{site.baseurl}}/snake">Previous Website</a></td>
+        <td><a href="{{site.baseurl}}/Sprint1TSDP">Sprint 1 Partner Check</a></td>
     </tr>
 </table>
 
