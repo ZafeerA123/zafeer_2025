@@ -19,7 +19,8 @@ GitHub student_2025 repo:
 
 GitHub Pages Actions:
 
-Hacks Tools & Equipment Play:
+Hacks Tools & Equipment Play: 
+- [Emoji](https://zafeera123.github.io/zafeer_2025/Emoji)
 
 Hacks GitHub Pages Playground:
 
