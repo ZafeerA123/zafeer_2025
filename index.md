@@ -97,28 +97,23 @@ image: /images/mario_animation.png
         <button class="gradient-button">Button</button>
     </div>
 
-    <!-- Second div with the "Past Projects" button -->
-    <div class="transparent-box">
-        <!-- Button for past projects -->
-        <button class="cool-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
-    </div>
+<!-- Second div with the "Past Projects" button and video -->
+<div class="transparent-box" style="display: flex; align-items: center; justify-content: flex-start;">
+    <!-- Embedded video with custom thumbnail -->
+    <video width="320" height="240" controls poster="{{site.baseurl}}/images/gif1.gif" style="margin-right: 10px;">
+        <source src="{{site.baseurl}}/images/Video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+       <p>Watch this video to see my past projects!</p>
+    <!-- Button for past projects -->
+    <button class="cool-button" onclick="window.open('https://zafeera123.github.io/Personal2/', '_blank')">Past Projects</button>
+</div>
+
 
 </body>
 </html>
 
 <br> 
-
-## Introduction
-
-My name is Zafeer Ahmed. I am a junior at DNHS, and currently enrolled in:
-
-<ul>
-  <li class="fade-in">AP Physics</li>
-  <li class="fade-in" style="animation-delay: 0.5s;">AP Calculus AB</li>
-  <li class="fade-in" style="animation-delay: 1s;">AP English</li>
-  <li class="fade-in" style="animation-delay: 1.5s;">AP Computer Science Principles</li>
-  <li class="fade-in" style="animation-delay: 1.5s;">Spanish 6</li>
-</ul>
 
 
 Go to My About Page 
