@@ -21,6 +21,7 @@ GitHub Pages Actions:
 
 Hacks Tools & Equipment Play: 
 - [Emoji](https://zafeera123.github.io/zafeer_2025/Emoji)
+- [Wikipedia](https://zafeera123.github.io/zafeer_2025/wikipedia)
 
 Hacks GitHub Pages Playground:
 
