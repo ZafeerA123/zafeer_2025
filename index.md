@@ -4,6 +4,7 @@ title: Student Home
 description: Home Page
 hide: true
 image: /images/mario_animation.png
+comments: true
 ---
 
 <table cellpadding="10">
