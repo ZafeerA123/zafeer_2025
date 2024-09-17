@@ -4,11 +4,11 @@ title: Sprint 1 Table
 permalink: /table/
 ---
 
-| Week  | Plans      | Hacks (To Do) | Tangibles |
-|-------|------------|---------------|-----------|
-| Week 0| [title](#) | [title](#)    | [title](#)|
-| Week 1| [title](#) | [title](#)    | [title](#)|
-| Week 2| [title](#) | [title](#)    | [title](#)|
-| Week 3| [title](#) | [title](#)    | [title](#)|
+| Week  | Plans         | Hacks (To Do)                                               | Tangibles/Results                                                   |
+|-------|---------------|-------------------------------------------------------------|---------------------------------------------------------------------|
+| Week 0| [First week plan](#)  | [title](#)                                                  | [Tool Journey](https://zafeera123.github.io/zafeer_2025/ToolsJourney)|
+| Week 1| [Week 1 plan](#)  | [title](#)                                                  | [title](#)                                                          |
+| Week 2| [title](#)     | - [Partner Check Issue](https://github.com/ZafeerA123/zafeer_2025/issues/1) <br> - [Partner Check](https://zafeera123.github.io/zafeer_2025/Sprint1TSDP) <br> - [Wikipedia Hack](https://zafeera123.github.io/zafeer_2025/wikipedia) <br> - [Emoji](https://zafeera123.github.io/zafeer_2025/Emoji) | [title](#)                                                          |
+| Week 3| [Week 3 plan](#)  | - [Cookie Clicker Game](#) <br> - [Calculator](#) <br> - [Snake Game](#) | [title](#)                                                          |
 
  
