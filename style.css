@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#game {
+    margin-top: 50px;
+}
+
+#cookie {
+    width: 100px;
+    cursor: pointer;
+}
+
+#score, #workers {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+

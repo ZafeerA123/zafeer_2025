@@ -10,7 +10,8 @@ comments: true
 <table cellpadding="10">
     <tr>
         <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
-        <td><a href="{{site.baseurl}}/Sprint1TSDP">Sprint 1 Partner Check</a></td>
+        <td><a href="{{site.baseurl}}/Sprint1TSDP">Partner Check</a></td>
+        <td><a href="{{site.baseurl}}/table">Sprint 1 Table</a></td>
     </tr>
 </table>
 
