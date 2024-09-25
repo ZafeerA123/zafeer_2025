@@ -2,7 +2,7 @@
 toc: True
 comments: True
 layout: post
-title: Cookie Cutter
+title: Cookie Clicker
 description: Hack 1 for Javascript Playground
 permalink: /Cookie
 ---
@@ -25,6 +25,17 @@ permalink: /Cookie
     <script src="scripts.js"></script>
 </body>
 </html>
+
+
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/portfolio_2025"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 
 
 
