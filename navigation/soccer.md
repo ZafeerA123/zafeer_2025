@@ -82,7 +82,7 @@ permalink: /soccer/
 </script>
 
  <script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/portfolio_2025"
+        repo="nighthawkcoders/zafeer_2025"
         issue-term="title"
         label="blogpost-comment"
         theme="github-light"

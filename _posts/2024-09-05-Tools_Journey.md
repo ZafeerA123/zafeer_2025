@@ -12,7 +12,7 @@ My tools journey starts off with my switiching from a chromebook to a windows co
 The downloading journey had started with me going onto nighthawk pages and downloading all the specefic tools needed for windows. I also got to start using terminal, which I was not used to because Kasm had it's own built in terminal. This created the opportunity for me to expereince how to download tools firsthand rather than kasm's built in tools like vscode. 
 
 <script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/portfolio_2025"
+        repo="nighthawkcoders/zafeer_2025"
         issue-term="title"
         label="blogpost-comment"
         theme="github-light"
