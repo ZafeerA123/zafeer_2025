@@ -1,0 +1,11 @@
+{
+    "argv": [
+      "node",
+      "-e",
+      "require('ijavascript').run();",
+      "{connection_file}"
+    ],
+    "display_name": "JavaScript (Node.js)",
+    "language": "javascript"
+  }
+  
