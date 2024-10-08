@@ -9,11 +9,13 @@ comments: true
 
 <table cellpadding="10">
     <tr>
+        <td><a href="{{site.baseurl}}/HWtable"><strong>Homework Table</strong></a></td>
         <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
         <td><a href="{{site.baseurl}}/Sprint1TSDP">Partner Check</a></td>
         <td><a href="{{site.baseurl}}/table">Sprint 1 Table</a></td>
     </tr>
 </table>
+
 
 <div style="align-items: center; display: flex; flex-direction: column;">
     <a href="{{site.baseurl}}/">
@@ -172,6 +174,8 @@ comments: true
 Go to My About Page 
 <!-- Button element -->
 <button class="cool-button" onclick="window.open('https://zafeera123.github.io/zafeer_2025/about/', '_blank')">About Me</button>
+
+
 
 {% assign sprite_file = site.baseurl | append: page.image %}  <!--- Liquid concatentation --->  
 {% assign hash = site.data.mario_metadata %}  <!--- Liquid list variable created from file containing mario metatdata for sprite --->  
