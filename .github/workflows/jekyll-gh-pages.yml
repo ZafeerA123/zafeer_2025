@@ -41,7 +41,7 @@ jobs:
         
       - name: Install dependencies
         run: |
-          pip install nbconvert
+          pip install nbconvert PyYAML  # Added PyYAML to the list of dependencies
           # Add any other necessary package installations here
           
       - name: Execute conversion script
