@@ -28,19 +28,31 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'  # Specify your desired Python version
+
+      - name: Check Python and Pip Versions
+        run: |
+          python --version
+          pip --version
+        
       - name: Install dependencies
         run: |
           pip install nbconvert
           # Add any other necessary package installations here
+          
       - name: Execute conversion script
         run: python scripts/convert_notebooks.py
+        
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
-          destination: ./_site
+          source: ./  # Your Jekyll source directory
+          destination: ./_site  # Your Jekyll build output directory
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
