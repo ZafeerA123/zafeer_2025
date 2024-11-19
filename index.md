@@ -13,6 +13,7 @@ comments: true
         <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
         <td><a href="{{site.baseurl}}/Sprint1TSDP">Partner Check</a></td>
         <td><a href="{{site.baseurl}}/table">Sprint 1 Table</a></td>
+        <td><a href="{{site.baseurl}}/MCQ">2018 MCQ Blog Reflection</a></td>
     </tr>
 </table>
 
