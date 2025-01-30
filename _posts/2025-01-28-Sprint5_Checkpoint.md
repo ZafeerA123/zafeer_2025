@@ -13,17 +13,38 @@ The purpose of our program is to create a functioning, user-friendly,  studying 
 # Purpose of Individual Feature
 - Flashcards allow students to Create, Update, and Delete flashcards in specefic Decks
 
+
+CPT REQUIREMENT 1: Input from a User, a Device, an Online Data Stream, or a File
+-The user enters a deck title as input.
+-The frontend sends this user input to the backend via a POST request to store the deck in the database.
+
+
 # Input/Output Requests
- The frontend sends the input as a POST request to the API endpoint:
-```
+async function fetchDecks() {
     try {
         const response = await fetch('http://127.0.0.1:8887/api/deck', {
-            method: 'POST',
+            method: 'GET',
             headers: { 'Content-Type': 'application/json' },
             credentials: 'include',
-            body: JSON.stringify({ title: deckTitle, user_id: 1 }), // Replace user_id as needed
         });
+
+        if (response.ok) {
+            const fetchedDecks = await response.json();
+            console.log('Fetched decks:', fetchedDecks);
+
+            deckContainer.innerHTML = ''; // Clear container
+
+            fetchedDecks.forEach(deck => {  // ✅ FOR LOOP EQUIVALENT
+                displayDeck(deck);
+            });
+        }
+    } catch (error) {
+        console.error('Error fetching decks:', error);
+    }
+}
 ```      
+
+- For loop to iterate over fetchedDecks
 
 in order to Create the Flashcards/Decks. 
 
@@ -120,11 +141,13 @@ Tester Data:
 
 # Use of List, Dictionaries, and Database
 
+CPT Requirement #2: Use of at Least One List (or Other Collection Type)
 
 Lists: Used to manage user interests.
 Dictionaries: Used to handle JSON data in API requests and responses.
 Database: Used to store user data, including interests.
 
+CPT requirement #5: Query
 
 1) Extracting Data (Python List from SQLAlchemy Query)
 ```
@@ -162,6 +185,8 @@ class Flashcard(db.Model):
 
 # API Methods & Algorithmic Code
 
+CPT Requirement #3: At Least One Procedure That Contributes to the Program’s Purpose
+
 1)  API Endpoints for CRUD Operations
 ```
 @app.route('/api/flashcard', methods=['POST'])
@@ -173,6 +198,9 @@ def create_flashcard():
 ```
 
 Explanation: This method creates a new flashcard and stores it in the database.
+
+
+CPT Requirement #4: An Algorithm That Includes Sequencing, Selection, and Iteration
 
 2) Algorithm with Sequencing, Selection, and Iteration
 ```
@@ -262,6 +290,8 @@ async function addFlashcard(question, answer, deckId) {
     }
 }
 ```
+CPT Requirement #6: Instructions for Output
+
 The fetch API sends a request to the /api/flashcard endpoint. It provides the flashcard details in the request body.
 
 function sends a POST request to the backend API. This is a call to the backend algorithm that processes the data.
@@ -289,3 +319,4 @@ If you get rid of some data, error codes come back as
 {
     "message": "Title, content, and deck_id are required"
 }
+
