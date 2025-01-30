@@ -44,7 +44,7 @@ async function fetchDecks() {
 }
 ```      
 
-- For loop to iterate over fetchedDecks
+- For loop to iterate over fetchedDecks.
 
 in order to Create the Flashcards/Decks. 
 
