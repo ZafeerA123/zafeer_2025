@@ -25,3 +25,8 @@ header_pages:
   - navigation/about.md
   - navigation/soccer.md
   - README4YML.md
+exclude:
+  - venv/
+  - .git/
+  - node_modules/
+  - _site/
