@@ -13,6 +13,15 @@ The purpose of our program is to create a functioning, user-friendly, studying s
 
 Flashcards allow students to Create, Update, and Delete flashcards in specefic Decks
 
+  <div id="123456">
+    <img src="{{site.baseurl}}/images/flashcard1.png" style="width: 190000px;">
+  </div>
+<br><br>
+
+  <div id="123456">
+    <img src="{{site.baseurl}}/images/deck.png" style="width: 190000px;">
+  </div>
+<br><br>
 
 
 ## 🏆 Meeting CPT & FRQ Requirements
@@ -27,7 +36,7 @@ and the **FRQ specifications** by implementing structured programming concepts, 
 
 
 
-### 🔍 CPT & FRQ Requirement Breakdown
+
 
 ### 🔍 CPT & FRQ Requirement Breakdown
 
@@ -105,17 +114,6 @@ def update_flashcard(flashcard_id, new_title, new_content):
 - **Defined procedure** (`update_flashcard`) with **parameters** (`flashcard_id`, `new_title`, `new_content`).
 - **Modifies existing flashcard records** in the database.
 
-#### **4️⃣ Algorithm Design (Sequencing, Selection, Iteration)**
-```python
-def update_flashcard(flashcard_id, new_title, new_content):
-    flashcard = Flashcard.query.get(flashcard_id)
-    flashcard._title = new_title
-    flashcard._content = new_content
-    db.session.commit()
-    return flashcard.read()
-```
-- **Defined procedure** (`update_flashcard`) with **parameters** (`flashcard_id`, `new_title`, `new_content`).
-- **Modifies existing flashcard records** in the database.
 
 #### **4️⃣ Algorithm Design (Sequencing, Selection, Iteration)**
 ```python
