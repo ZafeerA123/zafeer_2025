@@ -192,35 +192,6 @@ class Flashcard(db.Model):
 - **String fields (`_title`, `_content`)** store the flashcard data.
 
 ### 📌 API Endpoints and CRUD operations
-The backend handles **creating, reading, updating, and deleting** flashcards through these routes:
-As you can see in this photo, 
-
-  <div id="123456">
-    <img src="{{site.baseurl}}/images/flashcard.png" style="width: 190000px;">
-  </div>
-<br><br>
-
-Users can add and edit own data that get's stored in the Backend Database. 
-
-  <div id="123456">
-    <img src="{{site.baseurl}}/images/image.png" style="width: 190000px;">
-  </div>
-<br><br>
-
-The frontend also uses DELETE in order to Remove unwanted Decks/Flashcards.
-
-```
- try {
-                const response = await fetch(`http://127.0.0.1:8887/api/deck/${deck.id}`, {
-                    method: 'DELETE',
-                    headers: { 'Content-Type': 'application/json' },
-                    credentials: 'include',
-                });
-
-                if (response.ok) {
-                    alert('Deck deleted successfully!');
-```
-
 #### 1️⃣ Creating a Flashcard (`POST /api/flashcard`)
 ```python
 @flashcard_api.route('/flashcard', methods=['POST'])
@@ -240,7 +211,7 @@ def create_flashcard():
 - **Saves it in the database** using `SQLAlchemy`.
 - **Ensures authentication** using JWT tokens.
 
-#### 2️⃣ Fetching Flashcards (`GET /api/flashcard`)
+#### 2️⃣ Reading Flashcards (`GET /api/flashcard`)
 ```python
 @flashcard_api.route('/flashcard', methods=['GET'])
 @token_required()
@@ -297,50 +268,6 @@ def delete_flashcard(flashcard_id):
 
 > This project **effectively manages flashcard data** with an optimized database model, secure API access, and efficient CRUD operations.
 
-## Using postman to show raw API request and RESTful response 
-POST Request to Add Flashcard:
-
-URL: http://127.0.0.1:8887/api/flashcard
-Method: POST
-Body:
-{
-  "title": "What is 10 x 2",
-  "content": "20",
-  "user_id": 1,
-  "deck_id": 1
-}
-
-Response:
-
-Status: 200 OK
-Body:
-{
-    "content": "20",
-    "deck_id": 1,
-    "id": 8,
-    "title": "What is 10 x 2",
-    "user_id": 1
-}
-
-  <div id="t3">
-    <img src="{{site.baseurl}}/images/t3.png" style="width: 190000px;">
-  </div>
-<br><br>
-
-DELETE Request to delete a Deck:
-URL: http://127.0.0.1:8887/api/deck
-Method: DELETE
-
-Response:
-{
-    "message": "Deck with ID 2 deleted successfully"
-}
-
-  <div id="t6">
-    <img src="{{site.baseurl}}/images/t6.png" style="width: 190000px;">
-  </div>
-<br><br>
-
 ## Using db_init, db_restore, db_backup to show tester data creation and data recovery
 
 Tester Data: 
@@ -356,36 +283,6 @@ Tester Data:
     <img src="{{site.baseurl}}/images/t69.png" style="width: 190000px;">
   </div>
 <br><br>
-
-## Use of List, Dictionaries, and Database
-
-CPT Requirement: Use of at Least One List (or Other Collection Type)
-
-Lists: Used to manage user interests.
-Dictionaries: Used to handle JSON data in API requests and responses.
-Database: Used to store user data, including interests.
-
-CPT requirement: Query
-
-1) Extracting Data (Python List from SQLAlchemy Query)
-```
-flashcards = Flashcard.query.filter_by(_deck_id=deck.id).all()
-```
-Explanation: This retrieves all flashcards linked to a specific deck and returns a list.
-
-
-2) Formatting Data for API Response (Dictionaries)
-```
-def read(self):
-    return {
-        "id": self.id,
-        "title": self._title,
-        "content": self._content,
-        "user_id": self._user_id,
-        "deck_id": self._deck_id
-    }
-```
-Explanation: This function converts a database record into a dictionary, allowing JSON responses in the API.
 
 ---
 
