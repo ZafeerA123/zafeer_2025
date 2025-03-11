@@ -23,16 +23,26 @@ Flashcards allow students to Create, Update, and Delete flashcards in specefic D
   </div>
 <br><br>
 
+  <div id="123456">
+    <img src="{{site.baseurl}}/images/Tri3.png" style="width: 190000px;">
+  </div>
+<br><br>
 
-## 🏆 Meeting CPT & FRQ Requirements
+
+## 🏆 Meeting CPT (Vide Showcase - PPR)
 
 This project fully satisfies the **[College Board CPT requirements](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf)**
 and the **FRQ specifications** by implementing structured programming concepts, data storage, and algorithmic logic. Below is a **detailed breakdown** of how the requirements are met with supporting code examples.
 
-  <div id="123456">
-    <img src="{{site.baseurl}}/images/frq.png" style="width: 190000px;">
-  </div>
+
+<div id="123456">
+  <video width="640" height="360" controls>
+    <source src="{{site.baseurl}}/images/123.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 <br><br>
+
 
 
 
@@ -171,26 +181,6 @@ function displayFlashcards(cards) {
 ---
 
 
-
-## 🗄️ Databasing & Backend (Flask API)
-
-The **backend** is a Flask-based REST API that provides **CRUD functionality**, data persistence, and secure authentication.
-
-### 📌 Database Model (SQLAlchemy)
-Each **flashcard** is stored in the database using a structured model:
-```python
-class Flashcard(db.Model):
-    __tablename__ = 'flashcards'
-    id = db.Column(db.Integer, primary_key=True)
-    _title = db.Column(db.String(255), nullable=False)
-    _content = db.Column(db.String(255), nullable=False)
-    _user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    _deck_id = db.Column(db.Integer, db.ForeignKey('decks.id'), nullable=True)
-```
-- The **primary key (`id`)** ensures uniqueness.
-- **Foreign keys (`_user_id`, `_deck_id`)** associate flashcards with users and decks.
-- **String fields (`_title`, `_content`)** store the flashcard data.
-
 ### 📌 API Endpoints and CRUD operations
 #### 1️⃣ Creating a Flashcard (`POST /api/flashcard`)
 ```python
@@ -285,17 +275,3 @@ Tester Data:
 <br><br>
 
 ---
-
-## 🚀 Next Steps
-
-🔹 **Improve Database Performance**: Implement indexing and caching for faster queries.  
-🔹 **Enhance API Security**: Strengthen authentication mechanisms to prevent unauthorized access.  
-🔹 **Introduce Flashcard Sharing**: Allow users to share decks with friends.  
-
----
-
-## 🎯 Conclusion
-
-This project **demonstrates Full Stack Development** by integrating **a structured backend with a secure, database-driven API**. The **use of CRUD operations, authentication, and data persistence** ensures reliability and scalability. 🎉
-
-By implementing **structured programming principles**, **database best practices**, and **user-focused features**, this project **successfully meets the CPT and FRQ requirements**, making it a **strong candidate for real-world applications**. 🚀
