@@ -2,8 +2,8 @@
 toc: True
 comments: true
 layout: post
-title: Full Stack Blog
-description: Individual blog for Sprint 5 Dynamic Checkpoint Blog
+title: CPT Full stack Review
+description: Individual blog for Sprint 5 Dynamic Checkpoint Blog (FULL STACK)
 permalink: /FullStack
 ---
 ## 🚀 Flashcards Feature - Full Stack Development Breakdown
