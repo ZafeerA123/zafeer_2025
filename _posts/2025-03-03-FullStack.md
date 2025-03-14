@@ -1,6 +1,6 @@
 ---
 toc: True
-comments: true
+comments: True
 layout: post
 title: CPT Full stack Review
 description: Individual blog for Sprint 5 Dynamic Checkpoint Blog (FULL STACK)
@@ -275,3 +275,12 @@ Tester Data:
 <br><br>
 
 ---
+
+<script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/zafeer_2025"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
