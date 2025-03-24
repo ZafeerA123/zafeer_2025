@@ -10,6 +10,7 @@ comments: true
 <table cellpadding="10">
     <tr>
         <td><a href="{{site.baseurl}}/HWtable"><strong>Homework Table</strong></a></td>
+        <td><a href="{{site.baseurl}}/5_1_Benfeficial_and_Harmful_Effects">5.1</a></td>
         <td><a href="{{site.baseurl}}/ToolsJourney">Tools Journey</a></td>
         <td><a href="{{site.baseurl}}/Sprint1TSDP">Partner Check</a></td>
         <td><a href="{{site.baseurl}}/table">Sprint 1 Table</a></td>
