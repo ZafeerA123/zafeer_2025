@@ -19,7 +19,7 @@ minima:
 # remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
   - jekyll-remote-theme
-  - jekyll-notebook
+  - jekyll-jupyter-notebook
 
 header_pages:
   - navigation/blog.md

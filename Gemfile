@@ -6,4 +6,4 @@ gem "webrick", "~> 1.7"
 
 gem "execjs", "~> 2.8"
 
-gem 'jekyll-notebook'
+gem 'jekyll-jupyter-notebook', '0.0.6'
