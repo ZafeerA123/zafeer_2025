@@ -26,20 +26,17 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Check Python and Pip Versions
-        run: |
-          python --version
-          pip --version
-
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           pip install nbconvert PyYAML
+          gem install bundler
+          bundle install
 
       - name: Execute conversion script
         run: python scripts/convert_notebooks.py
 
       - name: Clean Build Directory
-        run: rm -rf ./_site  # Clean up old builds
+        run: rm -rf ./_site
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -47,10 +44,13 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Debug Build Output
+        run: ls -R ./_site || echo "_site folder is missing!"
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: jekyll-artifact  # Fixed artifact name
+          name: jekyll-artifact
           path: ./_site
 
   deploy:
@@ -64,4 +64,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: jekyll-artifact  # <-- Correct artifact name
+          artifact_name: jekyll-artifact
