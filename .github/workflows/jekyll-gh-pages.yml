@@ -1,3 +1,4 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
@@ -27,36 +28,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Setup Python
-        uses: actions/setup-python@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          python-version: '3.12'  # Specify your desired Python version
+          ruby-version: '3.1' # Set this to your desired Ruby version
+          bundler-cache: true
+      - name: Install Jekyll and dependencies
+        run: |
+          gem install bundler
+          bundle install
+      - name: Install Python dependencies
+        run: |
+          python -m venv venv  # Create virtual environment
+          source venv/bin/activate  # Activate the virtual environment
+          pip install -r requirements.txt  # Install Python packages
 
-      - name: Check Python and Pip Versions
-        run: |
-          python --version
-          pip --version
-        
-      - name: Install dependencies
-        run: |
-          pip install nbconvert PyYAML  # Added PyYAML to the list of dependencies
-          # Add any other necessary package installations here
-          
       - name: Execute conversion script
-        run: python scripts/convert_notebooks.py
-        
+        run: |
+          source venv/bin/activate  # Activate virtual environment
+          python scripts/convert_notebooks.py  # Run your Python script
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./  # Your Jekyll source directory
-          destination: ./_site  # Your Jekyll build output directory
-
+        run: |
+          bundle exec jekyll build  # Build your Jekyll site
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: jekyll-artifact
-          path: ./_site  # The output directory for the built Jekyll site
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
@@ -68,4 +63,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
