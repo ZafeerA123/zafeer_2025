@@ -5,6 +5,7 @@ description: Notes for Safe computing lesson (4.1.2025)
 type: issues 
 comments: true
 permalink: safe_computing
+categories: [Big Idea]
 ---
 
 # Popcorn Hack 1
