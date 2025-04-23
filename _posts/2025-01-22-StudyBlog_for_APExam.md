@@ -23,165 +23,116 @@ categories: [Big Idea 3]
 | Big Idea 5   | 5.2 Digital Divide                      | <a href="https://martijorbam.github.io/bi5_digitaldivide/csp%20big%20idea%205/2025/03/18/digdivide_IPYNB_2_.html" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_2_Digital_divide" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
 | Big Idea 5   | 5.1 Beneficial and Harmful Effects      | <a href="https://prajnar123123213.github.io/teaching_frontend/teaching/" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_1_Benfeficial_and_Harmful_Effects" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
 
-
-# MCQ Reflection
-
-
-## What you learned from quiz?
-Taking the practice multiple-choice questions (MCQ) exam for AP Computer Science Principles (CSP) was a great way to test my knowledge and see how well I understood the course concepts. Here are some things I learned...
-
-Creative Development and Programming
-I learned how to approach problem-solving using creative development. By tackling programming problems, I understood how to apply coding concepts to create programs and solutions to real-world challenges.
-
-Understanding Data and Its Uses
-The exam helped show me the importance of data in computers. I learned the basics on how to analyze data and make decisions based on that data, especially when it comes to organizing information
-
-The Importance of Algorithms
-The practice exam showed me how algorithms are essential in computer science. It taught me how to break down problems into manageable steps and how important it is to choose the right algorithm for tasks like sorting and searching.
-
-## What areas did I do weak on?
-  <div id="MCQ">
-    <img src="{{site.baseurl}}/images/MCQ3.png" style="width: 190000px;">
-  </div>
-<br><br>
-Based on this, we can see that some topics I did not perform well on are 
-
-3.6: Conditionals where I got 50% on 6 questions
-
-and 4 Categories where I got 0%
-
-3.18: Undecidable Problems
-3.9: Developing Algorithms
-3.4: Strings
-3.1: Variables and Assignments
-
-
-Based on this, I feel like in general questions that provided me with code, and I had to decipher what this meant/did I did not do well on. Also questions that provided large data sets, and I had to answer questions based on this I did not perform well on. <br><br>
+[https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf](AP CSP Course Exam Handbook)
 
 
 
-## Corrections
+# Review
 
-The following are corrections for [above](#what-areas-did-i-do-weak-on). 
+Key concepts, terms, and ideas 
 
-  <div id="Q1">
-    <h2>3.15 Random Values </h2>
-    <img src="{{site.baseurl}}/images/question1.png" style="width: 9000px;" >
-  </div>
-   <div id="MCQ">
-    <img src="{{site.baseurl}}/images/Answers1.png" style="width: 190000px;">
-  </div>
-<br><br>
+---
 
-**Answer D**  
+## Unit 1: The Internet
 
-Correct. For this spinner, there is a 1/8 chance of "Lose a turn", a 1/8 chance of "Move 2 spaces", and a 6/8 chance of "Move 1 space". The variable `spin` is set to a random value between 1 and 8.  
+### Key Concepts:
+- **Binary Data**: Everything on computers is represented in binary (0s and 1s).
+- **Protocols**: Rules for data transmission.
+  - **HTTP/HTTPS**: Used for web communication.
+  - **TCP/IP**: Manages data sending/receiving over the Internet.
+  - **DNS**: Translates domain names to IP addresses.
+- **IP Addresses**: Unique identifiers for devices on a network.
+- **Routing**: Packets take different paths to reach the destination.
+- **Redundancy**: Multiple paths ensure reliability.
+- **Scalability**: Internet can grow without issues.
+- **Latency**: Time it takes for data to travel.
+- **Bandwidth**: Data capacity of a network.
 
-- If `spin` is 1 (which occurs 1/8 of the time), the code segment prints **"Lose a turn"**.  
-- If `spin` is 2 (which occurs 1/8 of the time), the code segment prints **"Move 2 spaces"**.  
-- The remaining 6/8 of the time, the code segment prints **"Move 1 space"**.  
+---
 
+## Unit 2: Digital Information
 
-<br><br>
+### Key Concepts:
+- **Bits & Bytes**: Basic unit of data (1 byte = 8 bits).
+- **Data Compression**:
+  - **Lossless**: No data lost (e.g., ZIP, PNG).
+  - **Lossy**: Some data lost (e.g., JPEG, MP3).
+- **Abstraction**: Reducing complexity by focusing on main ideas.
+- **Metadata**: Data about data (e.g., resolution, file size).
+- **File Types**:
+  - Text, Images (BMP, JPEG), Sound (WAV, MP3), Video (MP4).
+- **Data Visualization**: Representing data in charts, graphs, etc.
+- **Big Data**: Large datasets used for analysis.
 
-  <div id="Q2">
-    <h2>2.2: Data Compression</h2>
-    <img src="{{site.baseurl}}/images/question2.png" style="width: 9000px;" >
-  </div>
+---
 
-Correct Answer: A. Lossless compression is a technique that allows for complete reconstruction of the original data.
-<br><br>
+## Unit 3: Algorithms and Programming
 
+### Key Concepts:
+- **Algorithms**: Step-by-step procedures for solving problems.
+- **Sequencing**: Order of steps matters.
+- **Selection**: Using `if` statements to make decisions.
+- **Iteration**: Loops (`for`, `while`).
+- **Variables**: Store data (e.g., `x = 5`).
+- **Functions**: Reusable code blocks.
+- **Parameters**: Input values for functions.
+- **Return Values**: Output from functions.
+- **Boolean Logic**: `AND`, `OR`, `NOT`.
+- **Debugging**: Finding and fixing errors.
+- **Simulation**: Model real-world processes.
 
-  <div id="Q3">
-    <h2>2.1: Binary Numbers</h2>
-    <img src="{{site.baseurl}}/images/q3.png" style="width: 9000px;" >
-  </div>
+---
 
-Correct Answer: D. Using 8 bits will allow for up to 256 characters (2^8 = 256)
-<br><br>
+## Unit 4: Big Idea: Computing Systems and Networks
 
-  <div id="Q4">
-    <img src="{{site.baseurl}}/images/q4.png" style="width: 9000px;" >
-  </div>
-Correct Answer: D. With 32-bit addressing, IPv4 has 2^32 possible addresses. With 128-bit addressing, IPv6 has 2^128 possible addresses. Since 2^32 x 2^96 = 2^128, IPv6 has 2^96 times as many possible addresses as IPv4.
-<br><br>
+### Key Concepts:
+- **Computing Devices**: Phones, computers, etc.
+- **Computing Systems**: Groups of devices.
+- **Input/Output Devices**: Keyboards, screens, etc.
+- **Storage**: Hard drives, cloud.
+- **Networks**: Systems of interconnected devices.
+- **Parallel Computing**: Multiple processors working simultaneously.
+- **Distributed Computing**: Multiple systems working together.
+- **Fault Tolerance**: Systems can continue working even if part fails.
 
-  <div id="Q5">
-    <h2>3.15: Random Values</h2>
-    <img src="{{site.baseurl}}/images/q5.png" style="width: 9000px;" >
-  </div>
-Correct Answer: D. This option causes the experiment to be successful when RANDOM, (1 comma 100), close parenthesis produces a result from 1 to 7 5, or 75% of the time.
-<br><br>
+---
 
-  <div id="Q6">
-    <h2>3.13: Developing Procedures</h2>
-    <img src="{{site.baseurl}}/images/q6.png" style="width: 9000px;" >
-  </div>
-Correct Answer: D. This option is correct because the procedures square and cube are each used to determine a power of n. A generalization of this procedure is Power (n,m), which calculates n raised to the m power. 
-<br><br> 
+## Unit 5: Big Idea: Impact of Computing
 
-  <div id="Q7">
-    <h2>2.2: Data Compression</h2>
-    <img src="{{site.baseurl}}/images/q7.png" style="width: 9000px;" >
-  </div>
-Correct Answer: B. A is wrong because this string can be shortened using byte pair encoding. B is correct because it is not possible to use byte pair encoding in the string "level_up" because no pair of characters appears in the string more than once. 
-<br><br>
+### Key Concepts:
+- **Digital Divide**: Gap between those with/without access to tech.
+- **Bias in Computing**: Data and algorithms can reflect human bias.
+- **Crowdsourcing**: Collecting input from many people online.
+- **Creative Commons**: Licenses for sharing content.
+- **Privacy & Security**:
+  - **Encryption**: Scrambling data for security.
+  - **Public Key Encryption**: Uses two keys (public and private).
+  - **Phishing**: Attempting to steal info via fake emails/websites.
+  - **Cookies**: Data stored by websites to track users.
+- **Legal & Ethical Concerns**: Data use, copyright, etc.
 
-  <div id="Q8">
-    <h2>3.5: Boolean Expressions</h2>
-    <img src="{{site.baseurl}}/images/q8.png" style="width: 9000px;" >
-  </div>
-Correct Answer: C. This is correct because the expression P AND Q evaluates true when both P and Q are true, and evaluates false otherwise. Therefore, the expression NOT (P AND Q) evaluates to false when both P AND Q are true, and evaluates to true otherwise.
-<br><br>
+---
 
-  <div id="Q9">
-    <h2>2.3: Extracting Information from Data</h2>
-    <img src="{{site.baseurl}}/images/q9.png" style="width: 9000px;" >
-  </div>
-Correct Answer: A. This option is correct. Metadata for an e-book would typically be used to provide descriptive information about the book. Previous versions of the e-book would likely be considered data, not metadata.
-<br><br>
+## Unit 6: Programming Abstractions
 
-  <div id="Q10">
-    <img src="{{site.baseurl}}/images/q10.png" style="width: 9000px;" >
-  </div>
-Correct Answers: A and B. One of my selected answers of D is incorrect because West High Schools provides an student ID for each student, but East High School does not. A is the correct answer I did not select, and this is correct because it is possible to create a single list of student names, sorted by last name. Both data formats provide the first and last names of each student.
-<br><br>
+### Key Concepts:
+- **Procedural Abstraction**: Functions/procedures to hide complexity.
+- **Modularity**: Breaking programs into smaller parts.
+- **Libraries/APIs**: Reusable code for common tasks.
+- **Code Efficiency**: Writing optimized code.
+- **Code Collaboration**: Working together (e.g., version control).
 
-  <div id="Q11">
-    <h2>3.12: Calling Procedures</h2>
-    <img src="{{site.baseurl}}/images/q11.png" style="width: 9000px;" >
-  </div>
-Correct Answer: A. This expression will first determine the maximum of a and b and then determine the maximum of the resulting value and c. This will result in the maximum of all three values.
-<br><br>
+---
 
+## Unit 7: Global Impact of Computing
 
-  <div id="Q12">
-    <h2>4.1: The Internet</h2>
-    <img src="{{site.baseurl}}/images/q12.png" style="width: 9000px;" >
-  </div>
-Correct Answer: C. Connecting new devices to the Internet is enabled by assignment of an IP address.
-<br><br>
+### Key Concepts:
+- **Innovations**: New tech that changes society.
+- **Data Analysis**: Finding trends, patterns in large datasets.
+- **Automation**: Machines doing tasks automatically.
+- **Artificial Intelligence (AI)**: Systems mimicking human intelligence.
+- **Ethical Implications**: How tech affects privacy, jobs, etc.
+- **Open Source Software**: Free to use/modify.
 
-  <div id="Q14">
-    <h2>3.17: Algorithmic Efficiency</h2>
-    <img src="{{site.baseurl}}/images/q14.png" style="width: 9000px;" >
-  </div>
-Correct Answer: D. Each call to the Analysis procedure requires one hour of program execution time. The procedure is called once before the loop, and then four times inside the loop (once for each of the four entries in One word, genre List). Therefore, the program will take approximately 5 hours to execute.
+---
 
-
-## Action to Improve
-  <div id="Q12">
-    <img src="{{site.baseurl}}/images/q13.png" style="width: 9000px;" >
-  </div>
-
-On every question that I got incorrect, there are links to other similar questions and links to the daily AP videos. I will look through my hardest [sections](#what-areas-did-i-do-weak-on), and watch through the daily AP videos. 
- 
- <script src="https://utteranc.es/client.js"
-        repo="nighthawkcoders/zafeer_2025"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
