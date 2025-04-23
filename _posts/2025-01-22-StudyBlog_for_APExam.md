@@ -23,9 +23,9 @@ categories: [Big Idea 3]
 | Big Idea 5   | 5.2 Digital Divide                      | <a href="https://martijorbam.github.io/bi5_digitaldivide/csp%20big%20idea%205/2025/03/18/digdivide_IPYNB_2_.html" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_2_Digital_divide" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
 | Big Idea 5   | 5.1 Beneficial and Harmful Effects      | <a href="https://prajnar123123213.github.io/teaching_frontend/teaching/" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_1_Benfeficial_and_Harmful_Effects" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
 
-[https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf](AP CSP Course Exam Handbook)
+[AP CSP Course Exam Handbook](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf)
 
-
+[College Board Questions](https://apclassroom.collegeboard.org/103/assessments/results/66160468/csperformance)
 
 # Review
 
