@@ -1,11 +1,11 @@
 ---
 layout: post
-title: BigO Lesson (4.22.2025) 
-description: Homework for BigO lesson
+title: 3.4 BigO Lesson (4.22.2025) 
+description: Homework and Notes for BigO lesson
 type: issues 
 comments: true
-permalink: BigO
-categories: [Big Idea]
+permalink: 3_4_BigO
+categories: [Big Idea 3]
 ---
 
 # Popcorn Hack 1

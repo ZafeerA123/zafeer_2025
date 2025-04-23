@@ -1,0 +1,187 @@
+---
+layout: post
+title: Study Blog for Tri 3 AP Exam
+description: Study Blog for Tri 3 AP Exam
+type: post 
+comments: true
+permalink: StudyBlog
+categories: [Big Idea 3]
+---
+# Table of Team Teach lessons
+
+| **Big Idea** | **Topic**                               | **Lesson Link**                                      | **My Blog**                                          |
+|--------------|-----------------------------------------|------------------------------------------------------|------------------------------------------------------|
+| Big Idea 3   | 3.5 Undecidable Problems, Graphs + Heuristics | <a href="https://alexrubio1.github.io/und_lesson/lesson/3-1" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/3_5_graphs_Heuristics" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 3   | 3.4 Big O and Algorithm Efficiency      | <a href="https://illuminati1618.github.io/yash_2025/big-o2" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/3_4_BigO" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 3   | 3.3 Simulation/Games and Random Algorithms | <a href="https://illuminati1618.github.io/yash_2025/csp/random/" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/3_3_Simulation" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 3   | 3.2 Lists and Filtering Algorithms      | <a href="https://githubneos.github.io/team_teach/Lists_Algorithms" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/3.2-blog" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 3   | 3.1 Binary Search Algorithm             | <a href="binary search blog" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/3_1_binary" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.6 Safe Computing                      | <a href="https://prad-coder.github.io/GenomeGamersFrontend/safecomputing" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_6_safe_computing" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.5 Legal and Ethical Concerns          | <a href="https://noratheturtle.github.io/nora_25/2025/03/15/LegalEthical_IPYNB_2_.html" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_5_Legal_ethical" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.4 Crowdsourcing                       | <a href="https://prad-coder.github.io/GenomeGamersFrontend/crowdsourcing#2-examples-of-distributed-computing" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_4_Crowdsourcing" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.3 Computing Bias                      | <a href="https://avikaprasad22.github.io/avika_2025/compbias/" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_3_Computing_Bias" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.2 Digital Divide                      | <a href="https://martijorbam.github.io/bi5_digitaldivide/csp%20big%20idea%205/2025/03/18/digdivide_IPYNB_2_.html" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_2_Digital_divide" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+| Big Idea 5   | 5.1 Beneficial and Harmful Effects      | <a href="https://prajnar123123213.github.io/teaching_frontend/teaching/" target="_blank" rel="noopener noreferrer"><strong>Lesson</strong></a> | <a href="{{site.baseurl}}/5_1_Benfeficial_and_Harmful_Effects" target="_blank" rel="noopener noreferrer"><strong>Blog</strong></a> |
+
+
+# MCQ Reflection
+
+
+## What you learned from quiz?
+Taking the practice multiple-choice questions (MCQ) exam for AP Computer Science Principles (CSP) was a great way to test my knowledge and see how well I understood the course concepts. Here are some things I learned...
+
+Creative Development and Programming
+I learned how to approach problem-solving using creative development. By tackling programming problems, I understood how to apply coding concepts to create programs and solutions to real-world challenges.
+
+Understanding Data and Its Uses
+The exam helped show me the importance of data in computers. I learned the basics on how to analyze data and make decisions based on that data, especially when it comes to organizing information
+
+The Importance of Algorithms
+The practice exam showed me how algorithms are essential in computer science. It taught me how to break down problems into manageable steps and how important it is to choose the right algorithm for tasks like sorting and searching.
+
+## What areas did I do weak on?
+  <div id="MCQ">
+    <img src="{{site.baseurl}}/images/MCQ3.png" style="width: 190000px;">
+  </div>
+<br><br>
+Based on this, we can see that some topics I did not perform well on are 
+
+3.6: Conditionals where I got 50% on 6 questions
+
+and 4 Categories where I got 0%
+
+3.18: Undecidable Problems
+3.9: Developing Algorithms
+3.4: Strings
+3.1: Variables and Assignments
+
+
+Based on this, I feel like in general questions that provided me with code, and I had to decipher what this meant/did I did not do well on. Also questions that provided large data sets, and I had to answer questions based on this I did not perform well on. <br><br>
+
+
+
+## Corrections
+
+The following are corrections for [above](#what-areas-did-i-do-weak-on). 
+
+  <div id="Q1">
+    <h2>3.15 Random Values </h2>
+    <img src="{{site.baseurl}}/images/question1.png" style="width: 9000px;" >
+  </div>
+   <div id="MCQ">
+    <img src="{{site.baseurl}}/images/Answers1.png" style="width: 190000px;">
+  </div>
+<br><br>
+
+**Answer D**  
+
+Correct. For this spinner, there is a 1/8 chance of "Lose a turn", a 1/8 chance of "Move 2 spaces", and a 6/8 chance of "Move 1 space". The variable `spin` is set to a random value between 1 and 8.  
+
+- If `spin` is 1 (which occurs 1/8 of the time), the code segment prints **"Lose a turn"**.  
+- If `spin` is 2 (which occurs 1/8 of the time), the code segment prints **"Move 2 spaces"**.  
+- The remaining 6/8 of the time, the code segment prints **"Move 1 space"**.  
+
+
+<br><br>
+
+  <div id="Q2">
+    <h2>2.2: Data Compression</h2>
+    <img src="{{site.baseurl}}/images/question2.png" style="width: 9000px;" >
+  </div>
+
+Correct Answer: A. Lossless compression is a technique that allows for complete reconstruction of the original data.
+<br><br>
+
+
+  <div id="Q3">
+    <h2>2.1: Binary Numbers</h2>
+    <img src="{{site.baseurl}}/images/q3.png" style="width: 9000px;" >
+  </div>
+
+Correct Answer: D. Using 8 bits will allow for up to 256 characters (2^8 = 256)
+<br><br>
+
+  <div id="Q4">
+    <img src="{{site.baseurl}}/images/q4.png" style="width: 9000px;" >
+  </div>
+Correct Answer: D. With 32-bit addressing, IPv4 has 2^32 possible addresses. With 128-bit addressing, IPv6 has 2^128 possible addresses. Since 2^32 x 2^96 = 2^128, IPv6 has 2^96 times as many possible addresses as IPv4.
+<br><br>
+
+  <div id="Q5">
+    <h2>3.15: Random Values</h2>
+    <img src="{{site.baseurl}}/images/q5.png" style="width: 9000px;" >
+  </div>
+Correct Answer: D. This option causes the experiment to be successful when RANDOM, (1 comma 100), close parenthesis produces a result from 1 to 7 5, or 75% of the time.
+<br><br>
+
+  <div id="Q6">
+    <h2>3.13: Developing Procedures</h2>
+    <img src="{{site.baseurl}}/images/q6.png" style="width: 9000px;" >
+  </div>
+Correct Answer: D. This option is correct because the procedures square and cube are each used to determine a power of n. A generalization of this procedure is Power (n,m), which calculates n raised to the m power. 
+<br><br> 
+
+  <div id="Q7">
+    <h2>2.2: Data Compression</h2>
+    <img src="{{site.baseurl}}/images/q7.png" style="width: 9000px;" >
+  </div>
+Correct Answer: B. A is wrong because this string can be shortened using byte pair encoding. B is correct because it is not possible to use byte pair encoding in the string "level_up" because no pair of characters appears in the string more than once. 
+<br><br>
+
+  <div id="Q8">
+    <h2>3.5: Boolean Expressions</h2>
+    <img src="{{site.baseurl}}/images/q8.png" style="width: 9000px;" >
+  </div>
+Correct Answer: C. This is correct because the expression P AND Q evaluates true when both P and Q are true, and evaluates false otherwise. Therefore, the expression NOT (P AND Q) evaluates to false when both P AND Q are true, and evaluates to true otherwise.
+<br><br>
+
+  <div id="Q9">
+    <h2>2.3: Extracting Information from Data</h2>
+    <img src="{{site.baseurl}}/images/q9.png" style="width: 9000px;" >
+  </div>
+Correct Answer: A. This option is correct. Metadata for an e-book would typically be used to provide descriptive information about the book. Previous versions of the e-book would likely be considered data, not metadata.
+<br><br>
+
+  <div id="Q10">
+    <img src="{{site.baseurl}}/images/q10.png" style="width: 9000px;" >
+  </div>
+Correct Answers: A and B. One of my selected answers of D is incorrect because West High Schools provides an student ID for each student, but East High School does not. A is the correct answer I did not select, and this is correct because it is possible to create a single list of student names, sorted by last name. Both data formats provide the first and last names of each student.
+<br><br>
+
+  <div id="Q11">
+    <h2>3.12: Calling Procedures</h2>
+    <img src="{{site.baseurl}}/images/q11.png" style="width: 9000px;" >
+  </div>
+Correct Answer: A. This expression will first determine the maximum of a and b and then determine the maximum of the resulting value and c. This will result in the maximum of all three values.
+<br><br>
+
+
+  <div id="Q12">
+    <h2>4.1: The Internet</h2>
+    <img src="{{site.baseurl}}/images/q12.png" style="width: 9000px;" >
+  </div>
+Correct Answer: C. Connecting new devices to the Internet is enabled by assignment of an IP address.
+<br><br>
+
+  <div id="Q14">
+    <h2>3.17: Algorithmic Efficiency</h2>
+    <img src="{{site.baseurl}}/images/q14.png" style="width: 9000px;" >
+  </div>
+Correct Answer: D. Each call to the Analysis procedure requires one hour of program execution time. The procedure is called once before the loop, and then four times inside the loop (once for each of the four entries in One word, genre List). Therefore, the program will take approximately 5 hours to execute.
+
+
+## Action to Improve
+  <div id="Q12">
+    <img src="{{site.baseurl}}/images/q13.png" style="width: 9000px;" >
+  </div>
+
+On every question that I got incorrect, there are links to other similar questions and links to the daily AP videos. I will look through my hardest [sections](#what-areas-did-i-do-weak-on), and watch through the daily AP videos. 
+ 
+ <script src="https://utteranc.es/client.js"
+        repo="nighthawkcoders/zafeer_2025"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
