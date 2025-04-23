@@ -25,7 +25,11 @@ categories: [Big Idea 3]
 
 [AP CSP Course Exam Handbook](https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-course-and-exam-description.pdf)
 
-[College Board Questions](https://apclassroom.collegeboard.org/103/assessments/results/66160468/csperformance)
+[MCQ 1 Blog](https://zafeera123.github.io/zafeer_2025/MCQ)
+
+[MCQ 2 Blog](https://zafeera123.github.io/zafeer_2025/2024/11/17/MCQ2.html)
+
+[My AP Classroom](https://apclassroom.collegeboard.org/103/assessments/results/66160468/csperformance)
 
 # Review
 
