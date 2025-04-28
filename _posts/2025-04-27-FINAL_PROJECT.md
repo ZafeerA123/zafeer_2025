@@ -171,7 +171,7 @@ categories: [Final Project]
     </div>
 
 <script type="module">
-        let world = { land: 0, water: 0, plants: 0, animals: 0, temperature: 20, weather: '', day: 0, health: 100, events: [] };
+        let world = { land: 0, water: 0, plants: 0, animals: 0, temperature: 20, weather: '', day: 0, health: 100 };
         let worldHistory = [];
 
         let dailyHealthHistory = [];
@@ -321,7 +321,8 @@ categories: [Final Project]
 
             // Temperature effect
             if (world.temperature >= 15 && world.temperature <= 25) {
-                adjustWorldHealth(5, "Ideal temperature");
+                healthChange += 5;
+                events.push("Ideal temperature boosted health.");
             } else if (world.temperature < 10 || world.temperature > 30) {
                 healthChange -= 7;
                 events.push("Extreme temperature harmed life.");
@@ -361,9 +362,6 @@ categories: [Final Project]
 
             document.body.classList.toggle('night', world.day % 2 === 0);
 
-            world.events.push({ day: world.day, summary: events });
-
-
             worldHistory.push({...world});
             displayWorld();
             updateBalanceBar();
@@ -378,8 +376,6 @@ categories: [Final Project]
             let balanceResult = evaluatePlantAnimalBalance(world.plants, world.animals);
             healthChange += balanceResult.healthImpact;
             events = events.concat(balanceResult.events);
-
-            updateHistoryLog();  
         }
 
 
@@ -425,15 +421,15 @@ categories: [Final Project]
                 events.push("Plenty of plants supported the ecosystem.");
             }
 
+            // Iteration: Assess stress level over multiple past days
             if (dailyHealthHistory.length >= 3) {
                 let stressDays = 0;
-                world.events.slice(-3).forEach(event => {
-                    if (event.summary.includes("Too many animals and not enough plants caused stress.")) {
-                        stressDays++;
-                    }
-                });
+                for (let i = dailyHealthHistory.length - 3; i < dailyHealthHistory.length; i++) {
+                    if (dailyHealthHistory[i] < 50) stressDays++;
+                }
                 if (stressDays >= 2) {
-                    adjustWorldHealth(-5, "Ongoing stress");
+                    healthImpact -= 5;
+                    events.push("Ongoing stress over the past days worsened health.");
                 }
             }
 
@@ -453,13 +449,12 @@ categories: [Final Project]
 
 
         function updateHistoryLog() {
-            let logHTML = "<h3>Last 3 Days:</h3>";
-            world.events.slice(-3).forEach((entry) => {
-                logHTML += `<p>Day ${entry.day}: ${entry.summary.join(", ")}</p>`;
+            let logHTML = "<h3>World History:</h3>";
+            worldHistory.slice(-3).forEach((entry) => {
+                logHTML += `<p>Day ${entry.day}: Health=${entry.health}%, Animals=${entry.animals}, Plants=${entry.plants}</p>`;
             });
             historyLog.innerHTML = logHTML;
         }
-
 
         function calculateScore() {
             let avgHealth = worldHistory.reduce((sum, day) => sum + day.health, 0) / worldHistory.length;
@@ -509,13 +504,6 @@ categories: [Final Project]
                 setTimeout(() => { notification.style.display = 'none'; }, 1000);
             }, 3000);
         }
-    
-    function adjustWorldHealth(amount, cause) {
-        world.health += amount;
-        world.health = Math.max(0, Math.min(100, world.health)); // Clamp
-        showNotification(`🌿 ${cause}: Health ${amount > 0 ? 'increased' : 'decreased'} by ${Math.abs(amount)}%`);
-    }
-
 
 
     </script>
