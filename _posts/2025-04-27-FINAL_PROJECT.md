@@ -141,7 +141,7 @@ categories: [Final Project]
 <body>
     <div class="main-content">
         <div class="container">
-            <div class="inputs-grid">
+            <div class="inputs-grid" id="inputsGrid">
                 <input type="number" id="exercise" placeholder="Exercise Hours (0-5)">
                 <input type="number" id="sleep" placeholder="Sleep Hours (0-12)">
                 <input type="number" id="water" placeholder="Water (cups)">
@@ -152,6 +152,7 @@ categories: [Final Project]
                     <option>Stressed</option>
                 </select>
             </div>
+            <button id="completeDay" style="display:none;">Complete Day</button>
             <button id="start">Start Day</button>
             <div id="stats"></div>
             <div id="bar" class="bar"></div>
@@ -256,14 +257,25 @@ function renderActions() {
     });
 }
 
-// Start the simulation
 function startDay() {
+    start.style.display = 'none';
+    inputsGrid.style.display = 'grid';
+    completeDay.style.display = 'inline';
+}
+
+// Complete Day: gather input, update energy, show Next Day
+function completeDayFunc() {
     let e = +exercise.value, s = +sleep.value, w = +water.value, c = +calories.value, m = mood.value;
     if ([e, s, w, c].some(isNaN) || !m) return alert("Fill all fields correctly!");
+
     fitness = { exercise: e, sleep: s, water: w, calories: c, mood: m, day: 1, energy: 100 };
-    energyHistory = [100]; // Initialize history list
+    energyHistory = [100];
+
+    applyDailyUpdate();
+
+    inputsGrid.style.display = 'none';
+    completeDay.style.display = 'none';
     nextDay.style.display = 'inline';
-    updateStats();
 }
 
 // Move to next day and update stats using procedure
@@ -284,8 +296,15 @@ function nextDayFunc() {
         fitness.mood = m;
     }
 
-    applyDailyUpdate(); // Call the procedure here
+    applyDailyUpdate();
 }
+
+// Event Listeners
+start.onclick = startDay;
+completeDay.onclick = completeDayFunc;
+nextDay.onclick = nextDayFunc;
+reset.onclick = () => { location.reload(); };
+
 
 // Apply a custom action and use the list
 window.applyAction = function (idx) {
@@ -321,10 +340,5 @@ addAction.onclick = () => {
     customActions.push({ name, boost, autoApply }); // Store data in list
     renderActions();
 }
-
-// Event Listeners
-start.onclick = startDay;
-nextDay.onclick = nextDayFunc;
-reset.onclick = () => { location.reload(); };
 
 </script>
