@@ -179,24 +179,24 @@ let customActions = []; // List to store custom user-defined actions
 // Student-Developed Procedure
 function calculateEnergyChange(exercise, sleep, water, calories, mood) {
     let change = 0;
-    if (sleep >= 7 && sleep <= 12) change += 15; // Sleep logic
+    if (sleep >= 7 && sleep <= 12) change += 25; // Sleep logic
     else if (sleep < 5) change -= 15;
 
    if (exercise >= 1 && exercise <= 5) {
         change += 10;
-    } else if (exercise > 5 || exercise < 1) {
+    } else if (exercise > 5 || exercise < 0.1) {
         change -= 10;
     }
 
-    if (water >= 6) change += 10;
+    if (water >= 8) change += 10;
     else change -= 10;
 
-    if (calories < 1500) {
+    if (calories < 1000) {
         change -= 10; 
     } else if (calories > 3000) {
         change -= 10; 
     } else {
-        change += 10; 
+        change += 15; 
     }
 
 
