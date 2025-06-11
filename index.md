@@ -24,6 +24,38 @@ comments: true
     </a>
 </div>
 
+<!-- 3-Box Socials Section -->
+<div class="socials-section d-flex justify-content-between flex-wrap" style="gap: 40px;">
+
+    <!-- Box 1: Email + GitHub Frontend + Backend -->
+  <div class="socials-box" style="flex: 1; min-width: 240px;">
+    <h2>Get in Touch</h2>
+    <div class="d-flex flex-column align-items-center gap-3 mt-4">
+      <a href="mailto:optivize47@gmail.com" class="btn btn-social-blue" target="_blank">📧 Email</a>
+      <a href="https://github.com/Open-Coding-Society/optivize_frontend" class="btn btn-social-blue" target="_blank">💻 GitHub Frontend</a>
+      <a href="https://github.com/Open-Coding-Society/optivize_backend" class="btn btn-social-blue" target="_blank">🖥️ GitHub Backend</a>
+    </div>
+  </div>
+
+
+  <!-- Box 2: LinkedIn Logo -->
+  <div class="socials-box" style="flex: 1; min-width: 240px;">
+    <h2>LinkedIn</h2>
+    <a href="https://www.linkedin.com/in/zafeer-ahmed-ocs/" target="_blank">
+      <img src="{{ site.baseurl }}/images/linkedin.png" alt="LinkedIn Logo" class="linkedin-logo mt-3">
+    </a>
+  </div>
+
+  <!-- Box 3: QR Code -->
+  <div class="socials-box text-center" style="flex: 1; min-width: 240px;">
+    <h2>Scan Our QR</h2>
+    <p style="color: #fff;">Visit the Optivize site:</p>
+    <img src="{{ site.baseurl }}/images/qr.jpg" alt="Optivize QR Code" class="qr-code mt-3">
+  </div>
+
+</div>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,20 +66,17 @@ comments: true
         opacity: 0;
         animation: fadeIn 2s forwards;
       }
-
       @keyframes fadeIn {
         to {
           opacity: 1;
         }
       }
-
       .reveal-later {
         opacity: 0;
         transition: opacity 1s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
       }
-
       /* Button styling */
       .cool-button {
         background: linear-gradient(to right, #ff7e5f, #feb47b); /* Same gradient as other button */
@@ -62,11 +91,9 @@ comments: true
         cursor: pointer;
         border-radius: 12px; /* Rounded edges */
       }
-
       .cool-button:hover {
         background-color: #45a049; /* Darker green on hover */
       }
-
       /* Gradient button styling */
       .gradient-button {
         background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient colors */
@@ -81,7 +108,6 @@ comments: true
         cursor: pointer;
         border-radius: 12px; /* Rounded edges */
       }
-
       /* Transparent div box with orange border */
       .transparent-box {
         background-color: transparent;
@@ -89,7 +115,6 @@ comments: true
         padding: 20px;
         margin-top: 10px;
       }
-
       @keyframes slideIn {
         from {
           transform: translateX(100%); /* Start off-screen to the right */
@@ -100,7 +125,6 @@ comments: true
           opacity: 1;
         }
       }
-
       /* Apply sliding animation to the div boxes */
       .transparent-box {
         background-color: transparent;
@@ -110,7 +134,6 @@ comments: true
         opacity: 0;
         animation: slideIn 2s forwards; /* Slide in animation */
       }
-
       /* You can also define different animation delays if you want the boxes to slide in sequentially */
       .transparent-box:nth-child(1) {
         animation-delay: 0.5s;
@@ -118,7 +141,6 @@ comments: true
       .transparent-box:nth-child(2) {
         animation-delay: 2s;
       }
-
       /* Styles for the arrow and text */
       .arrow-text-container {
         position: absolute;
@@ -127,7 +149,6 @@ comments: true
         transform: translate(-50%, -150%); /* Adjust positioning */
         text-align: center;
       }
-
       .arrow {
         width: 0;
         height: 0;
@@ -136,25 +157,92 @@ comments: true
         border-bottom: 20px solid black; /* Arrow color */
         margin: 0 auto;
       }
-
       .arrow-text {
         font-size: 20px;
         color: black; /* Text color */
         margin-top: 5px;
       }
+      .socials-section {
+        background: rgba(255, 221, 0, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 50px auto;
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+      }
+      .socials-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        flex: 1;
+        min-width: 240px;
+      }
+      .socials-box h2 {
+        background: linear-gradient(135deg, #ffdd00, #fbb034);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 20px;
+      }
+      .btn-social-blue {
+        background-color: #3498db;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        width: 200px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      .btn-social-blue:hover {
+        background-color: #5dade2;
+        transform: translateY(-3px) scale(1.05);
+      }
+      .qr-code {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 2px solid #fbb034;
+      }
+      .qr-code:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px #fbb034;
+      }
+      /* LinkedIn Logo */
+      .linkedin-logo {
+        width: 100px;
+        height: 100px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 12px;
+        border: 2px solid #0077b5;
+      }
+      .linkedin-logo:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 15px #0077b5;
+      }
     </style>
 </head>
 <body>
-
-    <!-- Paragraph element -->
-    <p>This is a paragraph.</p>
-
     <!-- First div with the gradient button -->
-    <div class="transparent-box">
-        Click this button!
-        <button class="gradient-button">Button</button>
+      <div class="socials-section d-flex flex-column align-items-center text-center" style="margin-top: 40px;">
+    <h2>Final Blogs for OCS - Tri 3</h2>
+    <p style="color: #fff;">Explore my reflections, checkpoints, and project summaries from the last trimester of Optivize development.</p>
+    <div class="d-flex flex-column align-items-center gap-3 mt-3">
+      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/Blog_5'">View Final Blog</button>
+      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/StudyBlog'">Homework Collection</button>
     </div>
-
+  </div>
     <!-- Second div with the "Past Projects" button and video -->
     <div class="transparent-box" style="display: flex; align-items: center; justify-content: flex-start;">
         <!-- Embedded video with custom thumbnail -->
