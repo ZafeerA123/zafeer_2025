@@ -239,7 +239,7 @@ comments: true
     <h2>Final Blogs for OCS - Tri 3</h2>
     <p style="color: #fff;">Explore my reflections, checkpoints, and project summaries from the last trimester of Optivize development.</p>
     <div class="d-flex flex-column align-items-center gap-3 mt-3">
-      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/Blog_5'">View Final Blog</button>
+      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/Blog_Optivize'">Optivize Blog</button>
       <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/StudyBlog'">Homework Collection</button>
     </div>
   </div>
