@@ -2,9 +2,34 @@
 toc: true
 comments: true
 layout: post
-title: Optivize Blog
+title: Final Blog
 description: My Role as Backend Lead on a Deployed AI Business App
 permalink: /Blog_Optivize
+---
+
+### 📈 Stats & Showcase  
+**📊 Contributions** 
+<a href="https://github.com/ZafeerA123">
+  <img src="{{ site.baseurl }}/images/commits.png" alt="Github Commits" title="Github Commits" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
+</a>
+
+
+
+- Issues: [View Issues](https://github.com/ZafeerA123/optivize_frontend/issues)  
+- Commits: [My Commits](https://github.com/ZafeerA123/optivize_frontend/commits?author=ZafeerA123)  
+- Open Coding Society Dashboard: 
+
+<a href="https://pages.opencodingsociety.com/dashboard">
+  <img src="{{ site.baseurl }}/images/dashboard.png" alt="OCS Dashbaord" title="OCS Dashboard" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
+</a>
+
+**🎤 N@tM Presentation**  
+Optivize was featured at **Night at the Museum**, where we demoed our AI platform to educators, parents, and peers. Visitors interacted with our chatbot, viewed live predictions, and tested the inventory interface.
+
+<a href="https://www.linkedin.com/in/zafeer-ahmed-ocs/recent-activity/comments/" target="_blank">
+  <img src="{{ site.baseurl }}/images/nightmuseum.png" alt="Team Photo N@tM" title="Optivize team at Night @ the Museum" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
+</a>
+
 ---
 
 🚀 **Optivize: AI-Enhanced Business Platform**  
@@ -48,44 +73,6 @@ I registered **Optivize** as a verified OAuth app and built a full Sheets integr
 
 <a href="https://open-coding-society.github.io/optivize_frontend/flashcards">
   <img src="{{ site.baseurl }}/images/google_import.png" alt="Google Sheets Import UI" title="Google Sheets import modal with token logic" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
-</a>
-
----
-
-#### ⚙️ DevOps & Deployment  
-Deployment and version control were part of my core responsibility:
-- GitHub PRs, merge conflict resolution, and detailed commit history  
-- Deployed with **Ubuntu**, `makefile`, `nginx`, **Render**, and **GitHub Pages**  
-- Local Docker setup using `docker-compose up -d` for backend tests  
----
-
-
-
-### 🤝 Teamwork & HyFlex Process  
-As backend lead, I embraced a **Scrum-style workflow** and mentored teammates:
-- Code reviews and backend planning  
-- Maintained syncing between frontend/backend repos  
-- Helped resolve multi-day merge issues during early repo refactoring  
-
----
-
-### 📈 Stats & Showcase  
-
-**📊 Contributions**  
-- Profile Commits [Github Commits](https://github.com/ZafeerA123)
-- Issues: [View Issues](https://github.com/ZafeerA123/optivize_frontend/issues)  
-- Commits: [My Commits](https://github.com/ZafeerA123/optivize_frontend/commits?author=ZafeerA123)  
-- Open Coding Society Dashboard: 
-
-<a href="https://pages.opencodingsociety.com/dashboard">
-  <img src="{{ site.baseurl }}/images/dashboard.png" alt="OCS Dashbaord" title="OCS Dashboard" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
-</a>
-
-**🎤 N@tM Presentation**  
-Optivize was featured at **Night at the Museum**, where we demoed our AI platform to educators, parents, and peers. Visitors interacted with our chatbot, viewed live predictions, and tested the inventory interface.
-
-<a href="https://www.linkedin.com/in/zafeer-ahmed-ocs/recent-activity/comments/" target="_blank">
-  <img src="{{ site.baseurl }}/images/nightmuseum.png" alt="Team Photo N@tM" title="Optivize team at Night @ the Museum" style="max-width: 100%; border-radius: 12px; margin: 10px 0;" />
 </a>
 
 ---
