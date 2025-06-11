@@ -32,8 +32,8 @@ comments: true
     <h2>Get in Touch</h2>
     <div class="d-flex flex-column align-items-center gap-3 mt-4">
       <a href="mailto:optivize47@gmail.com" class="btn btn-social-blue" target="_blank">📧 Email</a>
-      <a href="https://github.com/Open-Coding-Society/optivize_frontend" class="btn btn-social-blue" target="_blank">💻 GitHub Frontend</a>
-      <a href="https://github.com/Open-Coding-Society/optivize_backend" class="btn btn-social-blue" target="_blank">🖥️ GitHub Backend</a>
+      <a href="https://github.com/ZafeerA123" class="btn btn-social-blue" target="_blank">GitHub Profile</a>
+      <a href="https://www.canva.com/design/DAGqEWK7Il8/Z_WJz8o5X49zJNm5sdKb3Q/edit?utm_content=DAGqEWK7Il8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-social-blue" target="_blank">Resume</a>
     </div>
   </div>
 
@@ -48,8 +48,8 @@ comments: true
 
   <!-- Box 3: QR Code -->
   <div class="socials-box text-center" style="flex: 1; min-width: 240px;">
-    <h2>Scan Our QR</h2>
-    <p style="color: #fff;">Visit the Optivize site:</p>
+    <h2>Scan My QR</h2>
+    <p style="color: #fff;"></p>
     <img src="{{ site.baseurl }}/images/qr.jpg" alt="Optivize QR Code" class="qr-code mt-3">
   </div>
 
@@ -239,8 +239,8 @@ comments: true
     <h2>Final Blogs for OCS - Tri 3</h2>
     <p style="color: #fff;">Explore my reflections, checkpoints, and project summaries from the last trimester of Optivize development.</p>
     <div class="d-flex flex-column align-items-center gap-3 mt-3">
-      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/Blog_Optivize'">Optivize Blog</button>
-      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/StudyBlog'">Homework Collection</button>
+      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/Blog_Optivize'">Final Blog</button>
+      <button class="gradient-button" onclick="window.location.href='{{site.baseurl}}/StudyBlog'">Homework Certificates</button>
     </div>
   </div>
     <!-- Second div with the "Past Projects" button and video -->
