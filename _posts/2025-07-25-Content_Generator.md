@@ -9,7 +9,7 @@ categories: [Final Project]
 ---
 
 
-<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Video Script Generator</title>
@@ -46,16 +46,22 @@ categories: [Final Project]
     }
 
     .glass-card {
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(20px) saturate(150%);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
       border-radius: 20px;
       padding: 40px 30px;
       width: 90%;
       max-width: 480px;
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
       text-align: center;
-      animation: fadeIn 1.5s ease;
+      transform: translateY(0px);
+      transition: transform 0.3s ease;
     }
+    .glass-card:hover {
+      transform: translateY(-4px);
+    }
+
 
     input {
       width: 100%;
@@ -151,25 +157,93 @@ categories: [Final Project]
     100% { transform: rotate(360deg); }
     }
 
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: help;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 260px;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: left;
+      border-radius: 8px;
+      padding: 10px 12px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* Show above the heading */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @keyframes slideFadeIn {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in-delayed {
+      animation: slideFadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    .fade-in-delayed:nth-child(2) { animation-delay: 0.2s; }
+    .fade-in-delayed:nth-child(3) { animation-delay: 0.4s; }
+    .fade-in-delayed:nth-child(4) { animation-delay: 0.6s; }
+
+    input {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .submit-btn {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .submit-btn:active {
+      transform: scale(0.97);
+      background: linear-gradient(135deg, #00d4ff, #00ffe7);
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffe7;
+    }
+
+
+
+
+
 
   </style>
 </head>
-<body>
+
 
 <canvas id="background"></canvas>
 
 <div class="main-content">
-  <h1>🎬 Video Script Generator</h1>
-  <div class="glass-card">
+  <h1>🎬 Guitar Aces Content Generator</h1>
+    <div class="glass-card fade-in-delayed">
     <input type="text" id="keywordInput" placeholder="Enter a potential video topic" />
     <button class="submit-btn" id="generateBtn" onclick="submitKeyword()">Generate</button>
-    </div>
-  <div class="card-result" id="trendingSection">
-  <h2>🔥 Trending Today</h2>
-  <ul id="trendingList"></ul>
-    </div>
+  </div>
   <div id="scriptsContainer"></div>
-</div>
+  <div class="card-result fade-in-delayed" id="trendingSection">
+      <h2 class="tooltip">🔥 Trending Today
+    <span class="tooltiptext">Feeling stuck? These are trending TikToks — refresh the page for a new batch!</span>
+  </h2>
+    <ul id="trendingList"></ul>
+  </div>
+  
+
 
 
 <script>
@@ -282,62 +356,44 @@ categories: [Final Project]
 </script>
 
 <script>
-  const trendsWebhook = "https://hook.us2.make.com/nfg5v5s414bmvb08oxxlbyeb2acc8byc";
+  // Webhook URL that returns the latest TikTok trends as JSON
+  const trendsWebhook = "https://hook.us2.make.com/qlnuuhstm25oxmlft55qgyhlfd7m5t45";
 
   async function loadTrendingVideos() {
     const list = document.getElementById("trendingList");
-    list.innerHTML = "<li>Loading trends...</li>";
+    list.innerHTML = "<li>Loading trending TikToks...</li>";
 
     try {
       const res = await fetch(trendsWebhook);
-      const text = await res.text();
-
-      // Fix invalid JSON manually
-      let trends = [];
-
-      // Try to extract all valid object blocks from the malformed JSON
-      const regex = /{[^{}]*"text"[^{}]*"diggCount"[^{}]*"webVideoUrl"[^{}]*}/g;
-      const matches = text.match(regex);
-
-      if (matches) {
-        trends = matches.map(str => {
-          try {
-            return JSON.parse(
-              str
-                .replace(/([{,])\s*([a-zA-Z0-9_]+)\s*:/g, '$1"$2":') // quote keys
-                .replace(/:\s*'([^']+)'/g, ': "$1"') // single quotes to double
-                .replace(/:\s*“([^”]+)”/g, ': "$1"') // fancy quotes
-                .replace(/:\s*”([^“]+)“/g, ': "$1"') // reverse fancy quotes
-            );
-          } catch (e) {
-            return null;
-          }
-        }).filter(Boolean);
-      }
+      const json = await res.json();
+      const trends = json.trends || [];
 
       if (trends.length === 0) {
-        list.innerHTML = "<li>No trends available right now.</li>";
+        list.innerHTML = "<li>No trending videos right now.</li>";
         return;
       }
 
       list.innerHTML = trends.slice(0, 5).map(t => `
-        <li>
-          <a href="${t.webVideoUrl}" target="_blank">
-            🎥 ${t.text}<br>❤️ ${t.diggCount?.toLocaleString?.() || 0}
+        <li style="margin-bottom: 16px; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 12px 16px; backdrop-filter: blur(10px); list-style: none;">
+          <a href="${t.webVideoUrl}" target="_blank" style="color: #00ffe7; font-weight: bold; text-decoration: none;">
+            🎥 ${t.text}<br><span style="color:#ccc;">❤️ ${Number(t.diggCount || 0).toLocaleString()}</span>
           </a>
         </li>
       `).join("");
 
+
     } catch (err) {
-      list.innerHTML = "<li>Unable to load trends.</li>";
-      console.error("Trend load error:", err);
+      list.innerHTML = "<li>Unable to load trends right now.</li>";
+      console.error("Error fetching trends:", err);
     }
   }
 
+  // Run on page load
   loadTrendingVideos();
 </script>
 
 
 
-</body>
-</html>
+
+
+
