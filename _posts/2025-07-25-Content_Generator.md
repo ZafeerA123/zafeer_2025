@@ -375,7 +375,8 @@ categories: [Final Project]
 
       list.innerHTML = trends.slice(0, 5).map(t => `
         <li style="margin-bottom: 16px; background: rgba(255,255,255,0.05); border-radius: 12px; padding: 12px 16px; backdrop-filter: blur(10px); list-style: none;">
-          <a href="${t.webVideoUrl}" target="_blank" style="color: #00ffe7; font-weight: bold; text-decoration: none;">
+          <a href="${t.webVideoUrl}" target="_blank" rel="noopener noreferrer"
+            style="color: #00ffe7; font-weight: bold; text-decoration: none;">
             🎥 ${t.text}<br><span style="color:#ccc;">❤️ ${Number(t.diggCount || 0).toLocaleString()}</span>
           </a>
         </li>

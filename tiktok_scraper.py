@@ -25,7 +25,7 @@ def fetch_trending():
                 "text": caption,
                 "diggCount": likes,
                 "webVideoUrl": f"https://www.tiktok.com/@{user}/video/{video_id}"
-            })
+            })           
         except Exception as e:
             print("Skipping item due to error:", e)
 
